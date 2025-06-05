@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
-        <header className='flex flex-row items-start justify-between w-full mb-8'>
+    <div className="flex flex-col items-center justify-center min-h-screen ">
+        <header className='flex flex-row items-start justify-between w-full mb-8 p-4'>
           <div className="flex flex-row items-center justify-center">
             <Image
               src={"/doc-morph-logo.svg"}
@@ -66,8 +66,19 @@ export default function Home() {
               </p>
 
           </div>
-
         </main>
+
+        <footer className='flex flex-col items-center bg-[#1E2A3B] text-white w-full py-8 mt-16'>
+          <div className='flex flex-col items-center justify-center '>
+            <p className='text-sm'>
+              &copy; {new Date().getFullYear()} DocMorph. All rights reserved.
+            </p>
+            <div className='flex space-x-4 mt-2'>
+              <a href="/privacy" className="text-gray-200 hover:underline">Privacy Policy</a>
+              <a href="/terms" className="text-gray-200 hover:underline">Terms of Service</a>
+            </div>
+          </div>
+        </footer>
     </div>
   );
 }
