@@ -1,0 +1,12 @@
+{
+    "explorer.autoReveal": true,
+    "explorer.copyRelativePathSeparator": "auto",
+    "workbench.activityBar.iconClickBehavior": "toggle",
+    "workbench.settings.settingsSearchTocBehavior": "filter",
+    "zenMode.centerLayout": true,
+    "zenMode.fullScreen": true,
+    "zenMode.hideActivityBar": true,
+    "zenMode.hideLineNumbers": true,
+    "zenMode.showTabs": "multiple",
+    "explorer.autoOpenDroppedFile": true
+}
