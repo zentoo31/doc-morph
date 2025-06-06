@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import Features from './features';
 
 export default function Home() {
   return (
@@ -34,7 +36,7 @@ export default function Home() {
                 Login
               </button>
               <button className='ml-4 px-4 py-2 bg-white-600 text-black rounded transition-colors border border-gray-300 hover:bg-gray-100'>
-                Sign Up
+                <Link href={"/register"}>Sign Up</Link>
               </button>
             </div>
 
@@ -66,6 +68,7 @@ export default function Home() {
               </p>
 
           </div>
+          <Features />
         </main>
 
         <footer className='flex flex-col items-center bg-[#1E2A3B] text-white w-full py-8 mt-16'>
